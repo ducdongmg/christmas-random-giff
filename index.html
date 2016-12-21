@@ -24,10 +24,18 @@
 					duration: 1500,
 					complete: function() {
 						$(".footer").slideDown(1500, function() {
-							var pos = ($(".footer").offset().top * 97)/100;
+							var posSantas = ($(".footer").offset().top * 101)/100;
+							$("#santas").show().animate(
+								{
+									top: posSantas
+								} , {
+									duration: 2000
+								});
+							var posSnow = ($(".footer").offset().top * 97)/100;
+							// var pos = ($(".footer").offset().top * 85)/100;
 							$("#snowman").show().animate(
 								{
-									top: pos
+									top: posSnow
 								} , {
 									duration: 700
 								});
@@ -300,6 +308,9 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div>
+      	<img id="santas" src="christmas_santa_rudolf.png" class="img-responsive">
 	</div>
 	<footer class="footer" style="display: none;">
       <div class="container-fluid">
