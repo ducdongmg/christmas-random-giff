@@ -92,6 +92,9 @@ var PageTransitions = (function() {
 		} );
 		$("#toPage7").on( 'click', function() {
 			toPage7();
+		} );
+		$("#toPage8").on( 'click', function() {
+			toPage8();
 			Random.createArray();
 		} );
 	}
@@ -174,8 +177,23 @@ var PageTransitions = (function() {
 		var $currPage = $pages.eq( current );
 		current += 1;
 		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' );
+			var outClass = 'pt-page-moveToLeft';
+			var inClass = 'pt-page-moveFromRight';
+
+		$currPage.addClass( outClass ).on( animEndEventName, function() {
+			$currPage.off( animEndEventName );
+		} );
+
+		$nextPage.addClass( inClass ).on( animEndEventName, function() {
+			$nextPage.off( animEndEventName );
+		} );
+	}
+	function toPage8() {
+		var $currPage = $pages.eq( current );
+		current += 1;
+		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' );
 		var outClass = 'pt-page-scaleDown';
-		var	inClass = 'pt-page-scaleUpDown pt-page-delay300';
+		var	inClass = 'pt-page-scaleUpDown';
 
 		$currPage.addClass( outClass ).on( animEndEventName, function() {
 			$currPage.off( animEndEventName );

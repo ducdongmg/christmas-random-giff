@@ -1410,6 +1410,11 @@ html, body { height: 100%; }
 }
 
 .pt-page-7 {
+  background: #8A93FF;
+  color: white;
+}
+
+.pt-page-8 {
   background: #FFFFFF;
   color: black;
 }
