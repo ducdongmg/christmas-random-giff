@@ -9,6 +9,7 @@
 	<script src="modernizr.custom.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="typed.min.js"></script>
+	<script src="snowfall.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -31,7 +32,7 @@
 									duration: 700
 								});
 							$("#wish").typed({
-								strings: ["Chúc Giáng Sinh vui vẻ!"],
+								strings: ["Merry Christmas"],
 								typeSpeed: 50
 							});
 							$("#wish-jp").typed({
@@ -310,6 +311,12 @@
 	</div>
 	<script src="random.js"></script>
 	<script src="svgcheckbx.js"></script>
+	<script>
+		//default options
+		var testContainer = document.querySelector('.pt-perspective');
+		snowFall.snow(document.body, {image : "flake.png", minSize: 5, maxSize:30});
+        // snowFall.snow(testContainer);
+	</script>
 </body>
 
 </html>
