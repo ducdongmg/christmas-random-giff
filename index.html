@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mery Christmas 2015 !</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="modernizr.custom.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="typed.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="CreativeButton/css/component.css" />	
+	<script>
+		$( document ).ready(function() {
+			$("body").click(function() {
+				$("#logo").animate(
+				{
+					height: "200px"
+				} , {
+					duration: 1500,
+					complete: function() {
+						$(".footer").slideDown(1500, function() {
+							var pos = ($(".footer").offset().top * 97)/100;
+							$("#snowman").show().animate(
+								{
+									top: pos
+								} , {
+									duration: 700
+								});
+							$("#wish").typed({
+								strings: ["Chúc Giáng Sinh vui vẻ!"],
+								typeSpeed: 50
+							});
+							$("#wish-jp").typed({
+								strings: ["クリスマスおめでとうございます。"],
+								typeSpeed: 100
+							});
+							$(".typed-cursor").hide();
+							$("#trademark").fadeIn(1500);
+						});
+					}
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+ 	<div id="pt-main" class="pt-perspective">
+ 		<div id="main-container" class="container-fluid pt-page pt-page-1">
+			<div class="row">
+				<div class="col-md-12">
+					<img id="logo" src="Merry Christmas.png" class="img-responsive" style="height: 500px; margin:auto;">
+				</div>
+			</div>
+			<div id="content1" class="row" style="margin-top: 70px; display: none;">
+				<div class="col-md-2"></div>
+				<div class="col-md-8"></div>
+				<div class="col-md-2"></div>
+			</div>
+			<div id="trademark" class="row" style="margin-top: 50px; display: none;">
+				<div class="col-md-12" style="text-align: center;">
+					<span id="wish"></span>
+				</div>
+				<div class="col-md-12" style="text-align: center;">
+					<span id="wish-jp"></span>
+				</div>
+				<div class="col-md-12"  style="text-align: center;">
+					<button id="toPage2" class="btn2 btn-4 btn-4a">Bắt đầu</button>
+				</div>
+				<div class="col-md-12" style="text-align: center; margin-top: 50px;">
+					<p><img src="logo_rakus.gif" style="width: 30px; padding-right: 10px;">Created by 楽楽清算 Team, Rakus Vietnam Co., Ltd.</p>
+				</div>
+			</div>
+		</div>
+		<div id="main-container" class="container-fluid pt-page pt-page-2">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="rakuraku_seisan.png" class="img-responsive">
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-5" style="padding-left: 140px;">
+					<form class="ac-custom ac-list">
+						<ul class="member-list">
+							<li><input id="cb1" type="checkbox"><label for="cb1"><span>Bùi Thanh Loan</span></label></li>
+							<li><input id="cb2" type="checkbox"><label for="cb2"><span>Phan Trường Quang</span></label></li>
+							<li><input id="cb3" type="checkbox"><label for="cb3"><span>Nguyễn Phước Hậu</span></label></li>
+							<li><input id="cb4" type="checkbox"><label for="cb4"><span>Trần Khương Tuấn</span></label></li>
+							<li><input id="cb5" type="checkbox"><label for="cb5"><span>Trần Thị Tuyết</span></label></li>
+						<ul>
+					</form>
+					
+				</div>
+				<div class="col-md-5" style="padding-left: 140px;">
+					<form class="ac-custom ac-list">
+						<ul class="member-list">
+							<li><input id="cb6" type="checkbox"><label for="cb6"><span>Kiều Nữ Quỳnh Anh</span></label></li>
+							<li><input id="cb7" type="checkbox"><label for="cb7"><span>Mai Nguyễn Hoàng Nam</span></label></li>
+							<li><input id="cb8" type="checkbox"><label for="cb8"><span>Phan Văn Bình</span></label></li>
+							<li><input id="cb9" type="checkbox"><label for="cb9"><span>Nguyễn Ngọc Tú</span></label></li>
+							<li><input id="cb10" type="checkbox"><label for="cb10"><span>Nguyễn Viết Sơn</span></label></li>
+						<ul>
+					</form>
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="text-align: center; margin-top: 50px;">
+					<button id="toPage3" class="btn2 btn-4 btn-4a">Tiếp tục</button>
+				</div>
+			</div>
+		</div>
+		<div id="main-container" class="container-fluid pt-page pt-page-3">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="mail_dealer.png" class="img-responsive">
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-5" style="padding-left: 140px;">
+					<form class="ac-custom ac-list">
+						<ul class="member-list">
+							<li><input id="cb11" type="checkbox"><label for="cb11"><span>Phạm Thái An</span></label></li>
+							<li><input id="cb12" type="checkbox"><label for="cb12"><span>Nguyễn Vũ Đình Kha</span></label></li>
+							<li><input id="cb13" type="checkbox"><label for="cb13"><span>Bùi Minh Hoàng</span></label></li>
+						<ul>
+					</form>
+					
+				</div>
+				<div class="col-md-5" style="padding-left: 140px;">
+					<form class="ac-custom ac-list">
+						<ul class="member-list">
+							<li><input id="cb14" type="checkbox"><label for="cb14"><span>Nguyễn Văn Trường</span></label></li>
+							<li><input id="cb15" type="checkbox"><label for="cb15"><span>Kiều Văn Rol</span></label></li>
+							<li><input id="cb16" type="checkbox"><label for="cb16"><span>Vũ Ngọc Thông</span></label></li>
+						<ul>
+					</form>
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="text-align: center; margin-top: 50px;">
+					<button id="toPage4" class="btn2 btn-4 btn-4a">Tiếp tục</button>
+				</div>
+			</div>
+		</div>
+		<div id="main-container" class="container-fluid pt-page pt-page-4">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="haihai.png" class="img-responsive">
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<form class="ac-custom ac-list">
+						<ul class="member-list">
+							<li><input id="cb17" type="checkbox"><label for="cb17"><span>Phạm Bùi Thế Nhân</span></label></li>
+							<li><input id="cb18" type="checkbox"><label for="cb18"><span>Ngô Thế Hiển</span></label></li>
+							<li><input id="cb19" type="checkbox"><label for="cb19"><span>Lê Anh Khoa</span></label></li>
+							<li><input id="cb20" type="checkbox"><label for="cb20"><span>Nguyễn Minh Cảnh</span></label></li>
+						<ul>
+					</form>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="text-align: center; margin-top: 50px;">
+					<button id="toPage5" class="btn2 btn-4 btn-4a">Tiếp tục</button>
+				</div>
+			</div>
+		</div>
+		<div id="main-container" class="container-fluid pt-page pt-page-5">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="hataraku.png" class="img-responsive">
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<form class="ac-custom ac-list">
+						<ul class="member-list">
+							<li><input id="cb21" type="checkbox"><label for="cb21"><span>Nguyễn Công Hoan</span></label></li>
+							<li><input id="cb22" type="checkbox"><label for="cb22"><span>Nguyễn Đức Đông</span></label></li>
+							<li><input id="cb23" type="checkbox"><label for="cb23"><span>Nguyễn Thuyên Long</span></label></li>
+							<li><input id="cb24" type="checkbox"><label for="cb24"><span>Từ Thị Thúy An</span></label></li>
+						<ul>
+					</form>
+					
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="text-align: center; margin-top: 50px;">
+					<button id="toPage6" class="btn2 btn-4 btn-4a">Tiếp tục</button>
+				</div>
+			</div>
+		</div>
+		<div id="main-container" class="container-fluid pt-page pt-page-6">
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<form class="ac-custom ac-list">
+						<ul class="member-list">
+							<li><input id="cb25" type="checkbox"><label for="cb25"><span>Sếp</span></label></li>
+							<li><input id="cb26" type="checkbox"><label for="cb26"><span>Thạch Thái Bạch Vân Hạc</span></label></li>
+							<li><input id="cb27" type="checkbox"><label for="cb27"><span>Nông Thị Ngọc Trâm</span></label></li>
+							<li><input id="cb28" type="checkbox"><label for="cb28"><span>Hồ Kim Ngân</span></label></li>
+						<ul>
+					</form>
+					
+				</div>
+				<div class="col-md-7">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="text-align: center; margin-top: 50px;">
+					<button id="toPage7" class="btn2 btn-4 btn-4a">Tiếp tục</button>
+				</div>
+			</div>
+		</div>
+		<div id="main-container" class="container-fluid pt-page pt-page-7">
+			<div class="row">
+				<div class="col-md-12" style="text-align: center;">
+					<span id="titleResult"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8">
+					  <ul class="list-group" style="overflow-y: scroll; height: 430px; margin-top: 100px;">
+					  </ul>
+				</div>
+				<div class="col-md-2">
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer" style="display: none;">
+      <div class="container-fluid">
+      	<img src="christmas-footer.png" class="img-responsive">
+      </div>
+    </footer>
+	<div>
+      	<img id="snowman" src="snowman.png" class="img-responsive">
+	</div>
+	<script src="random.js"></script>
+	<script src="svgcheckbx.js"></script>
+</body>
+
+</html>
