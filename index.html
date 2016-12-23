@@ -32,7 +32,6 @@
 									duration: 2000
 								});
 							var posSnow = ($(".footer").offset().top * 97)/100;
-							// var pos = ($(".footer").offset().top * 85)/100;
 							$("#snowman").show().animate(
 								{
 									top: posSnow
@@ -104,6 +103,7 @@
 							<li><input id="cb5" type="checkbox"><label for="cb5"><span>Nguyễn Hoàng Tú</span></label></li>
 							<li><input id="cb6" type="checkbox"><label for="cb6"><span>Hồ Nhật Anh</span></label></li>
 							<li><input id="cb7" type="checkbox"><label for="cb7"><span>Dương Gia Bảo</span></label></li>
+							<li><input id="cb36" type="checkbox"><label for="cb36"><span>Nguyễn Sỹ Trường</span></label></li>
 						<ul>
 					</form>
 					
@@ -111,7 +111,6 @@
 				<div class="col-md-5" style="padding-left: 140px;">
 					<form class="ac-custom ac-list">
 						<ul class="member-list">
-							<li><input id="cb36" type="checkbox"><label for="cb36"><span>Tamura</span></label></li>
 							<li><input id="cb8" type="checkbox"><label for="cb8"><span>Phan Trường Quang</span></label></li>
 							<li><input id="cb9" type="checkbox"><label for="cb9"><span>Nguyễn Phước Hậu</span></label></li>
 							<li><input id="cb10" type="checkbox"><label for="cb10"><span>Trần Thị Tuyết</span></label></li>
@@ -143,7 +142,7 @@
 				<div class="col-md-5" style="padding-left: 140px;">
 					<form class="ac-custom ac-list">
 						<ul class="member-list">
-							<li><input id="cb14" type="checkbox"><label for="cb14"><span>Phạm Thái An</span></label></li>
+							<li><input id="cb14" type="checkbox"><label for="cb14"><span>Nguyễn Thái An</span></label></li>
 							<li><input id="cb15" type="checkbox"><label for="cb15"><span>Nguyễn Vũ Đình Kha</span></label></li>
 							<li><input id="cb16" type="checkbox"><label for="cb16"><span>Bùi Minh Hoàng</span></label></li>
 						<ul>
@@ -324,6 +323,7 @@
 	<script src="random.js"></script>
 	<script src="svgcheckbx.js"></script>
 	<script>
+		// http://www.somethinghitme.com/2011/10/05/jquery-snowfall-1-5-update-now-with-snow-buildup/
 		//default options
 		var testContainer = document.querySelector('.pt-perspective');
 		snowFall.snow(document.body, {image : "flake.png", minSize: 5, maxSize:30});
