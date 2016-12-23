@@ -76,26 +76,39 @@ var PageTransitions = (function() {
 		$pages.eq( current ).addClass( 'pt-page-current' );
 
 		$("#toPage2").on( 'click', function() {
-			toPage2();
+			toPage('pt-page-flipOutRight', 'pt-page-flipInLeft pt-page-delay500');
 		} );
 		$("#toPage3").on( 'click', function() {
-			toPage3();
+			toPage('pt-page-flipOutTop', 'pt-page-flipInBottom pt-page-delay500');
 		} );
 		$("#toPage4").on( 'click', function() {
-			toPage4();
+			toPage('pt-page-moveToRight', 'pt-page-moveFromLeft');
 		} );
 		$("#toPage5").on( 'click', function() {
-			toPage5();
+			toPage('pt-page-moveToLeft', 'pt-page-moveFromRight');
 		} );
 		$("#toPage6").on( 'click', function() {
-			toPage6();
+			toPage('pt-page-moveToTopEasing pt-page-ontop', 'pt-page-moveFromBottom');
 		} );
 		$("#toPage7").on( 'click', function() {
-			toPage7();
+			toPage('pt-page-moveToLeft', 'pt-page-moveFromRight');
 		} );
 		$("#toPage8").on( 'click', function() {
-			toPage8();
+			toPage('pt-page-scaleDown', 'pt-page-scaleUpDown');
 			Random.createArray();
+		} );
+	}
+	function toPage(outClass, inClass) {
+		var $currPage = $pages.eq( current );
+		current += 1;
+		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' );
+
+		$currPage.addClass( outClass ).on( animEndEventName, function() {
+			$currPage.off( animEndEventName );
+		} );
+
+		$nextPage.addClass( inClass ).on( animEndEventName, function() {
+			$nextPage.off( animEndEventName );
 		} );
 	}
 	function toPage2() {
